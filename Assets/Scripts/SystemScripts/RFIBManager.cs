@@ -85,7 +85,7 @@ public class RFIBManager : MonoBehaviour
     {
         RFIB.statesUpdate();
         StackSensing();
-        //TouchSensing();
+        TouchSensing();
         KeyPressed();
     }
 
@@ -168,13 +168,11 @@ public class RFIBManager : MonoBehaviour
         if (Input.GetKeyUp(";"))
         {
             RFIB.printStackedOrders();
-            //Debug.Log(GetBlockInfoXYZ(5, 2, 1, "BlockIDType"));
         }
         if (Input.GetKeyUp("."))
         {
             Debug.Log("====g====");
-            Debug.Log("BlockIDType: " + GetBlockInfoXYZ(3, 2, 1, "BlockIDType"));
-            Debug.Log("BlockIDType: " + GetBlockInfoXYZ(5, 2, 1, "BlockIDType"));
+            
         }
 
         #endregion
